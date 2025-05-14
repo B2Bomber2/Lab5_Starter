@@ -17,6 +17,7 @@ function init() {
     // clear all the options to be safe
     selectVoice.innerHTML = '<option value="select" disabled selected>Select Voice:</option>';
 
+    // loop through the voices and make them options from the drop down thing
     voices.forEach((voice, index) => {
       let option = document.createElement("option");
       option.value = index;
